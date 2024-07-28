@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  height: 100vh;
+}
+
+body {
+  @apply bg-gray-100;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  color: #000;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.pagination li a:hover {
+  background-color: #ddd;
+}
+
+.pagination li.active a {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.pagination li.disabled a {
+  color: #ccc;
+  pointer-events: none;
+}
